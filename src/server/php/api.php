@@ -32,6 +32,9 @@
 /**
  * OS.js Handler Instance
  */
+
+define("REPODIR", getcwd()."/packages");
+
 abstract class APIHandler
 {
   public static function checkVFSPrivilege($method, $arguments) {
