@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="src" path="dist"/>
+	<buildpathentry kind="src" path="dist-dev"/>
+	<buildpathentry kind="src" path="src/packages/default/Broadway"/>
+	<buildpathentry kind="src" path="src/packages/default/MusicPlayer"/>
+	<buildpathentry kind="src" path="src/server/php"/>
+	<buildpathentry kind="src" path="src/templates/dist/default"/>
+	<buildpathentry kind="src" path="src/templates/handler"/>
+	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
+</buildpath>

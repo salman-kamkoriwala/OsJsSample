@@ -1,0 +1,73 @@
+<application-window data-id="PaperTradeSampleWindow">
+	<gui-vbox class="block-label">
+		<gui-vbox-container data-shrink="1">
+            <gui-label data-id="Header">Paper Trade Sample Application</gui-label>
+		</gui-vbox-container>
+		
+		
+		<gui-vbox-container data-grow="1" data-fill="true" data-id="TabsContainer">
+            <gui-tabs>
+			    <gui-tab-container data-id="TabUserInfo" data-label="Add New User">
+			      <gui-fragment data-fragment-id="TabUserInformation"></gui-fragment>
+			    </gui-tab-container>
+			    <gui-tab-container data-id="TabUserListing" data-label="Users Listing">
+			      <gui-fragment data-fragment-id="TabUserList"></gui-fragment>
+			    </gui-tab-container>
+			</gui-tabs>
+      	</gui-vbox-container>
+	</gui-vbox>
+</application-window>
+
+<application-fragment data-id="TabUserInformation">
+	<gui-vbox class="block-label">
+	    <gui-vbox-container data-shrink="1" data-expand="true">
+	      <gui-label>Employee ID</gui-label>
+	      <gui-text data-id="EmpID" data-disabled="false"></gui-text>
+	    </gui-vbox-container>
+	    <gui-vbox-container data-shrink="1" data-expand="true">
+	      <gui-label>Name</gui-label>
+	      <gui-text data-id="UserName" data-disabled="false"></gui-text>
+	    </gui-vbox-container>
+	    <gui-vbox-container data-shrink="1" data-expand="true">
+	      <gui-label>Username</gui-label>
+	      <gui-text data-id="UserUsername" data-disabled="false"></gui-text>
+	    </gui-vbox-container>
+	    <gui-vbox-container data-shrink="1" data-expand="true">
+	      <gui-label>Email</gui-label>
+	      <gui-text data-id="UserEmails" data-disabled="false"></gui-text>
+	    </gui-vbox-container>
+	    <gui-vbox-container>
+	    	<gui-button data-id="SaveUser">Save</gui-button>
+	    </gui-vbox-container>
+    </gui-vbox>
+</application-fragment>
+
+<application-fragment data-id="TabUserList">
+	<gui-vbox class="block-label">
+	    <gui-vbox-container data-grow="1" data-shrink="0" data-basis="auto" data-fill="false">
+	    	
+	      <gui-grid data-id="UserList" id="UserList">
+	      	<gui-grid-row data-id="UserHead">
+	          <gui-grid-entry>
+	            <gui-label data-id="LblEmpID" class="head">Employee Id</gui-label>
+	          </gui-grid-entry>
+	          <gui-grid-entry>
+	            <gui-label data-id="LblUserName" class="head">Name</gui-label>
+	          </gui-grid-entry>
+	          <gui-grid-entry>
+	            <gui-label data-id="LblUserUsername" class="head">Username</gui-label>
+	          </gui-grid-entry>
+	          <gui-grid-entry>
+	            <gui-label data-id="LblUserEmails" class="head">Email</gui-label>
+	          </gui-grid-entry>
+	        </gui-grid-row>
+	        
+	        <gui-grid-row data-id="UserHead" id="no-records">
+	          <gui-grid-entry>
+	        	<gui-label style="text-align:center;">There are currently no records to show!</gui-label>
+	          </gui-grid-entry>
+	        </gui-grid-row>
+	      </gui-grid>
+	    </gui-vbox-container>
+    </gui-vbox>
+</application-fragment>

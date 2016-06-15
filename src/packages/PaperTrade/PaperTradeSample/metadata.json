@@ -1,0 +1,34 @@
+{
+  "className": "ApplicationPaperTradeSample",
+        "name": "Paper Trade Sample OS.js",
+        "description": "Application to demonstrate simple two tab OS.js Application",
+        "mime":       null,
+        "singular": true,
+        "category": "PaperTrade",
+        "icon": "apps/papertrade.png",
+        "build": {
+		    "copy": [
+		      "metadata.json",
+		      "api.php",
+		      "papertradesample_db.sql"
+		    ]
+		  },
+        "preload": [
+            {
+                "src": "main.js",
+                "type": "javascript"
+            },
+            {
+                "src": "main.css",
+                "type": "stylesheet"
+            }
+        ],
+        "type": "application",
+        "path": "PaperTrade/PaperTradeSample",
+        "build": {},
+        "repo": "PaperTrade",
+        "enabled": true
+}
+
+
+

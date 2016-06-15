@@ -1,0 +1,2 @@
+#!/bin/bash
+cd /home/salman/www/examples/OS.js/dist-dev; php -S 0.0.0.0:8000 ../src/server/php/server.php
