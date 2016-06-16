@@ -1,34 +1,5 @@
-node_modules
-*.swp
-*.swo
-.DS_Store
-.git-old
-*-tmp.*
-twistd.*
-.vagrant/*
-*.pyc
-
-# Misc
-.nightly
-.standalone
-.debian
-.nw
-
-# Storage
-vfs/*/*
-
-# Config files
-src/conf/999-*
-src/conf/900-custom.json
-src/server/settings.json
-src/server/packages.json
-src/installer/installer.exe
-
-# Builds
-dist/*
-dist-dev/*
-
-# Vendor
-vendor/dropbox*
-vendor/zip.js
-vendor/html2canvas
+.svn/entries
+.svn/format
+.svn/pristine
+.svn/tmp
+.svn/wc.db
